@@ -114,15 +114,21 @@ section#hero{
     padding: 60px var(--padding);
 }
 
-#team_title{
-    font-size: 39px;
+#team_title, #events_title{
+    font-size: 32px;
     font-weight: 700;
     margin: 5px 0;
 }
 
 #team_description{
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#events_description{
+    font-size: 18px;
+    line-height: 18px;
     font-weight: 300;
 }
 
@@ -177,6 +183,45 @@ footer .left{
 
 #footer_email{
     stroke: #FFFFFF;
+}
+
+#events{
+    padding: 60px var(--padding);
+}
+
+#events_wrapper{
+    margin: 20px 0;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.event{
+    width: 400px;
+    flex: 1;
+    min-width: 375px;
+    height: 220px;
+    background: var(--bg);
+    background-size: 100%;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.event .title{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.event .description{
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
 }
 
 
