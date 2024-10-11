@@ -11,6 +11,10 @@
     --nav-background: #1D1E18;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: Inter, sans-serif;
@@ -142,17 +146,37 @@ section#hero{
 }
 
 .member .role{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
 }
 
 .member .title{
     font-weight: 600;
-    font-size: 29px;
+    font-size: 27px;
 }
 
 .member .description{
-    font-size: 18px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer{
+    background: var(--nav-background);
+    padding: 20px var(--padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .left{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#footer_email{
+    stroke: #FFFFFF;
 }
 
 
