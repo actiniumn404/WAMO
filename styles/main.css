@@ -104,6 +104,57 @@ section#hero{
     color: #279A23;
 }
 
+/* Meet the Team */
+
+#team{
+    padding: 60px var(--padding);
+}
+
+#team_title{
+    font-size: 39px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+#team_description{
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+#members_wrapper{
+    display: flex;
+    row-gap: 24px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.member{
+    background: #EFEDE7;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 375px;
+    min-width: 300px;
+    flex: 1;
+}
+
+.member .role{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.member .title{
+    font-weight: 600;
+    font-size: 29px;
+}
+
+.member .description{
+    font-size: 18px;
+}
+
 
 @media only screen and (max-width: 1250px){
     :root{
