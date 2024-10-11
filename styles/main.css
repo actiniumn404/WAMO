@@ -209,7 +209,12 @@ footer .left{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.event > div{
+    display: flex;
+    flex-direction: column;
 }
 
 .event .title{
@@ -222,6 +227,14 @@ footer .left{
     font-size: 14px;
     font-weight: 200;
     color: white;
+}
+
+.upcoming{
+    background: rgb(211 47 47);
+    color: white;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 20px;
 }
 
 
