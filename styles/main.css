@@ -29,6 +29,9 @@ nav#navigation_box{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    position: sticky;
+    top: 0;
 }
 
 #logo{
@@ -114,19 +117,13 @@ section#hero{
     padding: 60px var(--padding);
 }
 
-#team_title, #events_title{
+.section_title{
     font-size: 32px;
     font-weight: 700;
     margin: 5px 0;
 }
 
-#team_description{
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 300;
-}
-
-#events_description{
+#team_description, #events_description, #community_description{
     font-size: 18px;
     line-height: 18px;
     font-weight: 300;
@@ -237,6 +234,27 @@ footer .left{
     border-radius: 20px;
 }
 
+#community{
+    padding: 60px var(--padding);
+    display: flex;
+    column-gap: 25px;
+    flex-wrap:wrap;
+    background: #f7f7fe;
+}
+
+#community iframe{
+    width: 100%;
+}
+
+
+#community .left{
+    min-width: 400px;
+    flex: 1;
+}
+
+#community .right{
+    flex: 1;
+}
 
 @media only screen and (max-width: 1250px){
     :root{
