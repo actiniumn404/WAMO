@@ -207,6 +207,12 @@ footer .left{
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
+    background-position: center;
+    transition: 0.5s ease-in-out background-size;
+}
+
+.event:hover{
+    background-size: 110%;
 }
 
 .event > div{
