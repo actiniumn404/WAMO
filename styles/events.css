@@ -1,0 +1,85 @@
+/* Hero Banner */
+section#hero{
+    height: 400px;
+    width: 100%;
+
+    background-image: url("../assets/trees-faded.png"), url("../assets/flag.png"), linear-gradient(180deg, rgba(1,10,0,1) 0%, rgb(6, 35, 0) 100%);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom right -10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    padding: 0 var(--padding);
+    justify-content: center;
+}
+
+.info{
+    padding: 30px var(--padding);
+}
+
+.info .title{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.info .left{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info .description{
+    font-size: 16px;
+}
+
+#solutions{
+    background: whitesmoke;
+}
+
+.document{
+    margin: 10px 0;
+}
+
+.document .name{
+    background: lightgray;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    user-select: none;
+}
+
+.document .name:hover{
+    opacity: 0.8;
+}
+
+.document.open .name{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.document .content{
+    padding: 20px;
+    background: #ececec;
+    display: none;
+}
+
+.document.open .content{
+    display: block;
+}
+
+.document embed{
+    width: 100%;
+    height: 1200px;
+}
+
