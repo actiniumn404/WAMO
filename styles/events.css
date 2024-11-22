@@ -42,7 +42,9 @@ section#hero{
 }
 
 .document{
+    display: block;
     margin: 10px 0;
+    text-decoration: none;
 }
 
 .document .name{
@@ -57,6 +59,7 @@ section#hero{
     cursor: pointer;
     transition: opacity 0.2s;
     user-select: none;
+    color: black;
 }
 
 .document .name:hover{

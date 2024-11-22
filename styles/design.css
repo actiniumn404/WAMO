@@ -87,7 +87,6 @@ nav#navigation_box{
 
 /* Footer */
 footer{
-    background: var(--nav-background);
     padding: 20px var(--padding);
     width: 100%;
     display: flex;
@@ -96,13 +95,13 @@ footer{
 }
 
 footer .left{
-    color: #FFFFFF;
+    color: black;
     font-size: 16px;
     font-weight: 200;
 }
 
 #footer_email{
-    stroke: #FFFFFF;
+    fill: black;
 }
 
 #hero .title{
