@@ -99,6 +99,13 @@ section#hero{
     text-decoration: none;
 }
 
+@media (max-width: 400px){
+    .event{
+        min-width: 300px;
+        background-size: 100% 100%;
+    }
+}
+
 .event:hover{
     background-size: 110%;
 }
