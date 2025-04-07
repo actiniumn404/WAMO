@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    row-gap: 100px;
+    column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 #notfound .left{
@@ -10,6 +13,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    flex-grow: 1;
 }
 
 #notfound .left h1{
