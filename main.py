@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify, make_response, redir
 from flask_frozen import Freezer
 
 import sys
+import os
 
 
 app = Flask(__name__)
@@ -13,10 +14,16 @@ freezer = Freezer(app)
 def page_home():
     return render_template("index.html")
 
-@app.route('/events/wamo1.html')
-def page_wamo1():
-    return render_template("wamo1.html")
+@app.route('/events/<event>.html')
+def page_events(event):
+    return render_template(f"events/{event}.html")
+
+@freezer.register_generator
+def page_events():
+    for dirpath, dirnames, filenames in os.walk("templates/events"):
+        for file in filenames:
+            yield {'event': os.path.splitext(file)[0]}
 
 if __name__ == "__main__":
-    freezer.freeze()
-    #app.run(port=8000)
+    #freezer.freeze()
+    app.run(port=8000)

@@ -113,7 +113,7 @@ nav{
     height: 1200px;
 }
 
-#herobutton{
+.herobutton{
     font-size: 18px;
     padding: 20px;
     border-radius: 4px;
@@ -124,8 +124,9 @@ nav{
     color: white;
     font-weight: 600;
     transition: opacity 0.2s ease-in;
+    margin-right: 10px;
 }
 
-#herobutton:hover{
+.herobutton:hover{
     opacity: 0.7;
 }

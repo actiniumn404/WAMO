@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">WAMO 2</span>
+        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        <a href="https://mathdash.live/contest/2024-WAMO-2" target="_blank"><button class="herobutton">Open Mathdash Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1Bb0ZBFQN2CU495z6jfcbNRGdmG5q4_FM/view?usp=sharing" target="_blank">
+            <div class="name">Short Answers Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1jc_2YhGXQ-A7fw8WpTvkWkYpZUc9sjgG/view?usp=sharing" target="_blank">
+            <div class="name">Short Answers Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}

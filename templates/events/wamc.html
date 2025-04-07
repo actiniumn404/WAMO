@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">WAMC 10/12</span>
+        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        <div id="buttons">
+            <a href="https://mathdash.com/contest/2024-wamc-10/" target="_blank"><button class="herobutton">WAMC 10 Mathdash <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+            <a href="https://mathdash.com/contest/2024-wamc-12/" target="_blank"><button class="herobutton">WAMC 12 Mathdash <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document" href="javascript:alert('Not available yet')" target="_blank">
+            <div class="name">WAMC 10 Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="javascript:alert('Not available yet')" target="_blank">
+            <div class="name">WAMC 12 Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1o8zgp11Vg3KCdBR5DZSHeiuxKzsHykTK/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 10 Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="javascript:alert('Not available yet')" target="_blank">
+            <div class="name">WAMC 12 Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}
