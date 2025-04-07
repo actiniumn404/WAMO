@@ -37,10 +37,11 @@ section#hero{
 
 #members_wrapper{
     display: flex;
-    row-gap: 24px;
-    column-gap: 100px;
+    row-gap: 50px;
+    column-gap: 20px;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 50px 0;
+    justify-content: space-between;
 }
 
 .member{
@@ -48,7 +49,8 @@ section#hero{
     flex-direction: column;
     row-gap: 10px;
     border-radius: 5px;
-    width: 300px;
+    width: 380px;
+    margin: auto;
 }
 
 .member .role{
@@ -85,7 +87,7 @@ section#hero{
     flex: 1;
     min-width: 375px;
     height: 220px;
-    background: #4c0519;
+    background: var(--bg);
     background-size: 100%;
     border-radius: 24px;
     display: flex;
