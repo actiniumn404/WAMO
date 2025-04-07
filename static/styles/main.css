@@ -27,12 +27,14 @@ section#hero{
     font-size: 32px;
     font-weight: 700;
     margin: 5px 0;
+    margin-bottom: 15px;
 }
 
 #team_description, #events_description, #community_description{
     font-size: 18px;
     line-height: 18px;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 #members_wrapper{
@@ -66,7 +68,7 @@ section#hero{
 .member .description{
     font-size: 16px;
     font-weight: 200;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 #events{
