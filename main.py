@@ -25,8 +25,9 @@ def page_events():
             yield {'event': os.path.splitext(file)[0]}
 
 @app.errorhandler(404)
-def not_found(e):
-    return render_template('404.html'), 404
+@app.route('/404.html') # Hack for flask freeze
+def not_found():
+    return render_template('404.html')
 
 if __name__ == "__main__":
     if "WAMODEV" in os.environ:
