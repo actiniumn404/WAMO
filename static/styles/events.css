@@ -76,6 +76,14 @@ section#hero{
     text-decoration: none;
 }
 
+.document.disabled{
+    pointer-events: none;
+}
+
+.document.disabled .name{
+    opacity: 0.3 !important;
+}
+
 .document .name{
     background: lightgray;
     padding: 15px 20px;
