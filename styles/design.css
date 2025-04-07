@@ -8,7 +8,7 @@
     --width: 1200px;
     --padding: calc(50vw - var(--width) / 2);
 
-    --nav-background: #1D1E18;
+    --nav-background: #27272a;
 }
 
 html{
@@ -16,8 +16,11 @@ html{
 }
 
 body{
-    margin: 0;
     font-family: Inter, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 66px;
 }
 
 /* Navigation Box */
@@ -92,6 +95,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    bottom: 0;
 }
 
 footer .left{
@@ -112,14 +117,14 @@ footer .left{
 }
 
 #hero .description{
-    color: #FFF;
-    font-weight: 100;
+    color: #d1d5db;
+    font-weight: 400;
     font-size: 22px;
     width: calc(0.62 * var(--width));
 }
 
 #hero .highlight{
-    color: #279A23;
+    color: #16a34a;
 }
 
 @media only screen and (max-width: 1250px){
