@@ -1,37 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-    <title>Washington Math Olympiad - WAMO 1 Contest</title>
 
-    <link rel="stylesheet" href="../styles/design.css">
-    <link rel="stylesheet" href="../styles/events.css">
-    <link rel="icon" href="../assets/favicon.png">
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-</head>
-<body>
-<nav id="navigation_box">
-    <a id="logo" href="../">
-        <div class="left">
-            <img src="../assets/logo.png" alt="WAMO Logo" />
-        </div>
-        <div class="right">
-            <span class="title">WAMO</span>
-            <span class="description">Washington Math Olympiad</span>
-        </div>
-    </a>
-    <div id="navigation_links">
-        <a href="#events">Events</a>
-        <a href="#community">Community</a>
-        <a href="#team">The Team</a>
-    </div>
-    <div id="navigation_hamburger">
-        <i class="fa fa-bars"></i>
-    </div>
-</nav>
+{% block content %}
 <section id="hero">
     <div class="left">
         <span class="title">WAMO 1</span>
@@ -39,7 +13,7 @@
         <a href="https://mathdash.com/contest/2024-WAMO-1" target="_blank"><button id="herobutton">Open Mathdash Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
     </div>
     <div class="right">
-        <img src="../assets/logo.png" />
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
     </div>
 </section>
 
@@ -73,20 +47,4 @@
     </section>
 </section>
 
-
-
-
-<footer>
-    <div class="left">© 2024 by Washington Math Olympiad</div>
-    <div class="right">
-        <a href="javascript:alert('Email not inserted yet')">
-            <svg width="24" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#FFFFFF"/>
-            </svg>
-        </a>
-    </div>
-</footer>
-
-<script src="../scripts/events.js"></script>
-</body>
-</html>
+{% endblock content %}
