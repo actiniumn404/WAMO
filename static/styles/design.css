@@ -81,11 +81,12 @@ nav#navigation_box{
     column-gap: 28px;
 }
 
-#navigation_links a{
+#navigation_links a, #projects span{
     font-size: 16px;
     color: #F8F8F8;
     text-decoration: none;
     font-weight: 400;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -125,6 +126,34 @@ footer .left{
 
 #hero .highlight{
     color: #16a34a;
+}
+
+#projects_popdown{
+    display: none;
+    position: absolute;
+    top: 66px;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: right;
+    right: calc(var(--padding) - 20px);
+    background: var(--nav-background);
+    padding: 0 20px 20px 20px;
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to bottom,
+      rgba(2,6,23,1),
+      rgba(21,128,61,1)
+    )
+}
+
+#navigation_links a:hover{
+    text-decoration: underline;
+}
+
+:is(#projects:focus, #projects:focus-within) #projects_popdown{
+    display: flex;
 }
 
 @media only screen and (max-width: 1250px){
