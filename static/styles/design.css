@@ -143,7 +143,7 @@ footer .left{
     border-image-slice: 1;
     border-image-source: linear-gradient(
       to bottom,
-      rgba(2,6,23,1),
+      var(--nav-background),
       rgba(21,128,61,1)
     )
 }

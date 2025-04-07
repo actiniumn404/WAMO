@@ -26,8 +26,8 @@ section#hero{
     width: 300px;
 }
 
-nav{
-    background: #111827 !important;
+:root{
+    --nav-background: #111827 !important;
 }
 
 .info{
