@@ -85,18 +85,25 @@ section#hero{
 .event{
     width: 400px;
     flex: 1;
-    min-width: 375px;
+    min-width: 300px;
     height: 220px;
     background: var(--bg);
-    background-size: 100%;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
     background-position: center;
-    transition: 0.5s ease-in-out background-size;
+    transition: 0.5s ease-in-out;
     text-decoration: none;
+    background-size: cover;
+}
+
+@media (max-width: 500px){
+    .event{
+        width: 100%;
+        min-width: 250px;
+    }
 }
 
 @media (max-width: 400px){
@@ -107,7 +114,7 @@ section#hero{
 }
 
 .event:hover{
-    background-size: 110%;
+    opacity: 0.8;
 }
 
 .event > div{
