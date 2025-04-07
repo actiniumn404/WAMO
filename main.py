@@ -25,7 +25,7 @@ def page_events():
             yield {'event': os.path.splitext(file)[0]}
 
 if __name__ == "__main__":
-    if os.environ["WAMODEV"]:
+    if "WAMODEV" in os.environ:
         app.run(port=8000)
     else:
         freezer.freeze()
