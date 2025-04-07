@@ -19,4 +19,17 @@ jobs:
             pip install -r requirements.txt
       - name: execute py script # run file
         run: |
-          python main.py
+            python -u main.py
+
+      - name: Add and Commit changes
+        run: |
+          git config --local user.email 'compile@example.com'
+          git config --local user.name 'WAMO Helper'
+          git add dist/
+          git diff-index --quiet HEAD || git commit -m 'Flask Source Compile: ${{ github.event.head_commit.message }}'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
