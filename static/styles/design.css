@@ -182,12 +182,23 @@ footer .left{
         flex-direction: column;
         z-index:3;
         background: var(--nav-background);
-        padding: 20px;
-        padding-top: 0;
+        padding: 0 20px 20px;
         top: 70px;
-        right: var(--padding);
+        right: calc(var(--padding) - 20px);
         row-gap: 10px;
+        text-align: right;
+        width: 160px;
 
         display: none;
+    }
+
+
+    :is(#navigation_box:focus, #navigation_box:focus-within) #navigation_links{
+        display: flex;
+    }
+
+    #projects_popdown{
+        width: 160px;
+        right: 0;
     }
 }
