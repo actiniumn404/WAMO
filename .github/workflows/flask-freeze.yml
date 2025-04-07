@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --local user.email 'compile@example.com'
           git config --local user.name 'WAMO Helper'
-          git add dist/
+          git add --all
           git diff-index --quiet HEAD || git commit -m 'Flask Source Compile: ${{ github.event.head_commit.message }}'
 
       - name: Push changes
