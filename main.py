@@ -25,5 +25,7 @@ def page_events():
             yield {'event': os.path.splitext(file)[0]}
 
 if __name__ == "__main__":
-    #freezer.freeze()
-    app.run(port=8000)
+    if "dev" in sys.argv:
+        app.run(port=8000)
+    else:
+        freezer.freeze()
