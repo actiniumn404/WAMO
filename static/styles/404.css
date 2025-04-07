@@ -1,0 +1,58 @@
+#notfound{
+    padding: 60px var(--padding);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#notfound .left{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+#notfound .left h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+#notfound .left span{
+    font-size: 30px;
+    color: #52525b;
+}
+
+#notfound img{
+    width: 400px;
+    background: #bbf7d0;
+    background: -webkit-radial-gradient(circle, #86efac 0%, rgba(255,255,255,0) 75%);
+    background: radial-gradient(circle, #86efac 0%, rgba(255,255,255,0) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86efac",endColorstr="#ffffff",GradientType=1);
+    background: -moz-radial-gradient(circle, #86efac 0%, rgba(255,255,255,0) 75%);
+}
+
+#notfound .right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#notfound button{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    background: #374151;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.2s ease-in;
+    margin-right: 10px;
+    width: fit-content;
+}
+
+#notfound button:hover{
+    opacity: 0.8;
+}

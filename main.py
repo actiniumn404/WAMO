@@ -24,6 +24,10 @@ def page_events():
         for file in filenames:
             yield {'event': os.path.splitext(file)[0]}
 
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html'), 404
+
 if __name__ == "__main__":
     if "WAMODEV" in os.environ:
         app.run(port=8000)
