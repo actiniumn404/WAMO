@@ -67,19 +67,20 @@
     <div id="members_wrapper">
 
         {% for member in [
-            {'name': 'Alex Yang', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Laura Wang', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Ryan Tang', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Patrick Sun', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Kaiyuan Mao', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Ryan Chen', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Wesley Wu', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Bruce Shu', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+            {'name': 'Alex Yang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "Alex is an incoming freshman at Interlake High School in Bellevue, Washington. Outside of math, he enjoys playing chess, reading books, and coding. His favorite area of math is combinatorics, as he feels like it's one of his strongest areas."},
+            {'name': 'Laura Wang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "Laura is an incoming sophomore at Lakeside School. Her favorite math subject is geometry, and she particularly enjoys writing combo problems. When she’s not doing math she likes to draw and ice skate."},
+            {'name': 'Ryan Tang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "cooked"},
+            {'name': 'Patrick Sun', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "Patrick is an incoming sophomore at Newport High School in Bellevue, Washington. Outside of writing problems for WAMO, Patrick loves feeding his video addiction and playing plenty of tennis. His favorite math subject is number theory and he also enjoys learning more about physics and history."},
+            {'name': 'Kaiyuan Mao', 'profile_pic': 'static/assets/kaiyuan.png', 'title': 'PROBLEM WRITER', 'descrip': "cooked"},
+            {'name': 'Ryan Chen', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "Skiibidi ts ts ts pmo. Tralallero Tralala icl tung tung tung tung tung tung tung tung tung sahur."},
+            {'name': 'Wesley Wu', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "Wesley is an incoming sophomore at Newport High School in Bellevue, Washington State. Outside of mathematics, he enjoys playing tennis competitively and procrastinating. He enjoys most subjects, although he slightly dislikes combinatorics and number theory."},
+            {'name': 'Bruce Shu', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "cooked"},
+            {'name': 'James Yang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "James is currently an eighth-grade student at Lakeside Middle School. In addition to participating in math competitions, he enjoys spending his free time at the zoo, watching movies with friends, and practicing soccer. His favorite area of mathematics is calculus, and he takes particular interest in problem writing, as it allows him to express his creativity."},
         ] %}
 
         <div class="member">
             <div class="headshot">
-                <img src="static/assets/default.png" />
+                <img src="{{ member.profile_pic }}" />
             </div>
             <div>
                 <div class="title">{{ member.name }}</div>
