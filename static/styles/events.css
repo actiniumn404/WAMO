@@ -243,3 +243,121 @@ section#hero{
         margin-top: 20px;
     }
 }
+
+/* Add after existing code */
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.result-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+}
+
+.medal {
+    padding: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.medal.gold {
+    background: linear-gradient(145deg, #fbbf24, #d97706);
+}
+
+.medal.silver {
+    background: linear-gradient(145deg, #94a3b8, #64748b);
+}
+
+.medal.bronze {
+    background: linear-gradient(145deg, #c2410c, #9a3412);
+}
+
+.student-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.student-info .name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.student-info .school {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.student-info .score {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #22c55e;
+}
+
+.honorable-mentions {
+    margin-top: 3rem;
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.honorable-mentions h3 {
+    color: #0f172a;
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.mentions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.mention {
+    display: grid;
+    grid-template-columns: 2rem 1fr 5rem;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: white;
+}
+
+.mention .rank {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.mention .name {
+    font-weight: 500;
+}
+
+.mention .score {
+    text-align: right;
+    color: #22c55e;
+}
+
+@media (max-width: 640px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mention {
+        grid-template-columns: 2rem 1fr 4rem;
+    }
+}
