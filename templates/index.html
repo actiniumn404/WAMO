@@ -67,19 +67,20 @@
     <div id="members_wrapper">
 
         {% for member in [
-            {'name': 'Alex Yang', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Laura Wang', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Ryan Tang', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Patrick Sun', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Kaiyuan Mao', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Ryan Chen', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Wesley Wu', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
-            {'name': 'Bruce Shu', 'title': 'PROBLEM WRITER', 'descrip': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+            {'name': 'Alex Yang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Laura Wang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Ryan Tang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Patrick Sun', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Kaiyuan Mao', 'profile_pic': 'static/assets/kaiyuan.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Ryan Chen', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Wesley Wu', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'Bruce Shu', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
+            {'name': 'James Yang', 'profile_pic': 'static/assets/default.png', 'title': 'PROBLEM WRITER', 'descrip': "..."},
         ] %}
 
         <div class="member">
             <div class="headshot">
-                <img src="static/assets/default.png" />
+                <img src="{{ member.profile_pic }}" />
             </div>
             <div>
                 <div class="title">{{ member.name }}</div>
