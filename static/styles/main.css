@@ -14,6 +14,7 @@ section#hero{
 
      padding: 0 var(--padding);
      justify-content: center;
+     animation: fadeIn 0.8s ease-out forwards;
  }
 
 /* Meet the Team */
@@ -21,6 +22,7 @@ section#hero{
 #team{
     padding: 60px var(--padding);
     background: white;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 .section_title{
@@ -28,6 +30,23 @@ section#hero{
     font-weight: 700;
     margin: 5px 0;
     margin-bottom: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.section_title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #22c55e;
+    transition: width 0.3s ease;
+}
+
+.section_title:hover::after {
+    width: 100%;
 }
 
 #team_description, #events_description, #community_description{
@@ -54,6 +73,11 @@ section#hero{
     border-radius: 5px;
     width: 380px;
     margin: 0 auto;
+    transition: transform 0.3s ease-out;
+}
+
+.member:hover {
+    transform: translateY(-8px);
 }
 
 .member .role{
@@ -74,6 +98,7 @@ section#hero{
 
 #events{
     padding: 60px var(--padding);
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 #events_wrapper{
@@ -98,8 +123,9 @@ section#hero{
     padding: 20px;
     justify-content: space-between;
     background-position: center;
-    transition: 0.5s ease-in-out background-size;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 @media (max-width: 400px){
@@ -111,6 +137,8 @@ section#hero{
 
 .event:hover{
     background-size: 110%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+    transform: translateY(-4px);
 }
 
 .event > div{
@@ -137,6 +165,7 @@ section#hero{
     padding: 5px 15px;
     width: fit-content;
     border-radius: 20px;
+    animation: softPulse 2s ease-in-out infinite;
 }
 
 #community{
@@ -146,6 +175,7 @@ section#hero{
     row-gap: 20px;
     flex-wrap:wrap;
     background: #eef2ff;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 #community iframe{
@@ -170,4 +200,28 @@ section#hero{
 
 .member .headshot img{
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.member:hover .headshot img {
+    transform: scale(1.02);
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle pulse animation for upcoming badge */
+@keyframes softPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
