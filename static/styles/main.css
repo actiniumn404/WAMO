@@ -44,6 +44,7 @@ section#hero{
     flex-wrap: wrap;
     margin: 50px 0;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .member{
@@ -52,7 +53,7 @@ section#hero{
     row-gap: 10px;
     border-radius: 5px;
     width: 380px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .member .role{
