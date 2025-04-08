@@ -53,6 +53,10 @@ def add_bg(image_path, output_path):
 def page_home():
     return render_template("index.html")
 
+@app.route('/whyus.html')
+def page_whyus():
+    return render_template("whyus.html")
+
 @app.route('/events/<event>.html')
 def page_events(event):
     return render_template(f"events/{event}.html")
