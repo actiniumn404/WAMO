@@ -35,6 +35,7 @@ nav#navigation_box{
 
     position: sticky;
     top: 0;
+    z-index: 1000;  /* Add high z-index to ensure it stays on top */
 }
 
 #navigation_hamburger{
@@ -201,4 +202,24 @@ footer .left{
         width: 160px;
         right: 0;
     }
+}
+
+section#hero {
+    position: relative;
+    z-index: 1;
+}
+
+#community {
+    position: relative;
+    z-index: 1;
+}
+
+#events {
+    position: relative;
+    z-index: 1;
+}
+
+#team {
+    position: relative;
+    z-index: 1;
 }
