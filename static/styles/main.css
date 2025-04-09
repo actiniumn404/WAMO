@@ -43,16 +43,18 @@ section#hero{
     content: '';
     position: absolute;
     bottom: -4px;
-    left: 0;
+    left: 50%;
     width: 0;
     height: 4px;
     background: #16a34a;
-    transition: width 0.3s ease;
+    transition: left 0.3s ease, width 0.3s ease;
 }
 
 .section_title:hover::after {
-    width: 100%;
+    width: calc(100% + 6px);
+    left: -3px;
 }
+
 
 #team_description, #events_description, #community_description{
     font-size: 18px;
@@ -232,7 +234,11 @@ section#hero{
 }
 
 .achiev {
-    background: whitesmoke;
+    background: linear-gradient(
+      145deg,
+      #ecfccb,
+      #dcfce7
+    );
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
