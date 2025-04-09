@@ -19,11 +19,6 @@ section#hero{
 
 /* Meet the Team */
 
-#team{
-    padding: 60px var(--padding);
-    background: #f1f5f9;
-    animation: fadeIn 0.8s ease-out forwards;
-}
 
 .section_title{
     font-size: 32px;
@@ -56,52 +51,13 @@ section#hero{
 }
 
 
-#team_description, #events_description, #community_description{
+#events_description, #community_description{
     font-size: 18px;
-    line-height: 18px;
     font-weight: 300;
     line-height: 1.5;
 }
 
-#members_wrapper{
-    display: flex;
-    row-gap: 50px;
-    column-gap: 20px;
-    flex-wrap: wrap;
-    margin: 50px 0;
-    justify-content: space-between;
-    align-items: baseline;
-}
 
-.member{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    border-radius: 5px;
-    width: 380px;
-    margin: 0 auto;
-    transition: transform 0.3s ease-out;
-}
-
-.member:hover {
-    transform: translateY(-8px);
-}
-
-.member .role{
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.member .title{
-    font-weight: 600;
-    font-size: 27px;
-}
-
-.member .description{
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 1.5;
-}
 
 #events{
     padding: 60px var(--padding);
@@ -205,10 +161,7 @@ section#hero{
     flex: 1;
 }
 
-.member .headshot img{
-    width: 100%;
-    transition: transform 0.3s ease;
-}
+
 
 /*.member:hover .headshot img {
     transform: scale(1.02);
