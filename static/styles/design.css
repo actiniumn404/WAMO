@@ -121,6 +121,7 @@ footer .left span{
     font-weight: 900;
     font-size: 40px;
     width: calc(0.62 * var(--width));
+    margin: 0;
 }
 
 #hero .description{
