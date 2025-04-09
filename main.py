@@ -72,7 +72,6 @@ def not_found():
     return render_template('404.html')
 
 if __name__ == "__main__":
-<<<<<<< Updated upstream
     if "WAMODEV" in os.environ:
         app.run(port=80, host="0.0.0.0")
     else:
@@ -82,7 +81,3 @@ if __name__ == "__main__":
                 add_bg(dirpath + "/" + file, dirpath + "/" + file)
 
         freezer.freeze()
-=======
-    # freezer.freeze()
-    app.run(port=8000)
->>>>>>> Stashed changes
