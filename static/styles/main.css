@@ -28,10 +28,11 @@ section#hero{
 .section_title{
     font-size: 32px;
     font-weight: 700;
-    margin: 5px 0;
-    margin-bottom: 15px;
+    margin: 5px 0 15px;
     position: relative;
     transition: color 0.3s ease;
+    width: fit-content;
+    cursor: pointer;
 }
 
 .section_title::after {
@@ -40,8 +41,8 @@ section#hero{
     bottom: -4px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: #22c55e;
+    height: 4px;
+    background: #16a34a;
     transition: width 0.3s ease;
 }
 
@@ -203,9 +204,9 @@ section#hero{
     transition: transform 0.3s ease;
 }
 
-.member:hover .headshot img {
+/*.member:hover .headshot img {
     transform: scale(1.02);
-}
+}*/
 /* Subtle pulse animation for upcoming badge */
 @keyframes softPulse {
     0% { transform: scale(1); }
@@ -238,7 +239,7 @@ section#hero{
     margin-top: 28px;
     flex: 1;
 
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(
@@ -277,27 +278,28 @@ section#hero{
 .why-points {
     margin: 40px 0;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
+    gap: 60px;
 }
 
 .why-points .point {
-    background: #f8fafc;
-    padding: 20px;
+    padding: 30px 0;
     border-radius: 12px;
-    border-left: 4px solid #22c55e;
+    flex: 1;
 }
 
 .why-points h3 {
-    color: #0f766e;
+    color: black;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 
 .why-points p {
     line-height: 1.6;
-    color: #334155;
+    color: #27272a;
+    margin: 0;
 }
 
 .why-points ul {
@@ -327,8 +329,11 @@ section#hero{
     padding: 25px 35px;
     background: linear-gradient(145deg, rgba(34,197,94,0.1) 0%, rgba(5,150,105,0.1) 100%);
     border-radius: 12px;
-    border-left: 4px solid #22c55e;
+    border-top: 4px solid #22c55e;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: fit-content;
+    margin: auto;
 }
 
 #whyus blockquote .quote {
