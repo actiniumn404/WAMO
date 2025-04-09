@@ -28,11 +28,15 @@ section#hero{
 .section_title{
     font-size: 32px;
     font-weight: 700;
-    margin: 5px 0 15px;
     position: relative;
     transition: color 0.3s ease;
     width: fit-content;
     cursor: pointer;
+    margin: 5px auto 20px;
+}
+
+.section_subtitle{
+    text-align: center;
 }
 
 .section_title::after {
