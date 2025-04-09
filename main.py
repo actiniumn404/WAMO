@@ -81,5 +81,3 @@ if __name__ == "__main__":
                 add_bg(dirpath + "/" + file, dirpath + "/" + file)
 
         freezer.freeze()
-    # freezer.freeze()
-    app.run(port=8000)
