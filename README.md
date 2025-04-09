@@ -1,4 +1,4 @@
-# Washington Math Olympiad (WAMO) Website
+# Washington Math Organization (WAMO) Website
 We are a dedicated group of students working to foster a love for mathematics and expand mathematical opportunities throughout Washington State and beyond. Our mission is to increase engagement with competitive math and create a community where students can grow and excel.
 
 
