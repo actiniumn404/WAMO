@@ -1,0 +1,82 @@
+#team{
+    padding: 60px var(--padding);
+    background: white;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.section_title{
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    transition: color 0.3s ease;
+    width: fit-content;
+    cursor: pointer;
+    margin: 5px auto 20px;
+}
+
+.section_title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background: #16a34a;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.section_title:hover::after {
+    width: calc(100% + 6px);
+    left: -3px;
+}
+
+#members_wrapper{
+    display: flex;
+    row-gap: 50px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 5px;
+    width: 380px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-out;
+}
+
+.member:hover {
+    transform: translateY(-8px);
+}
+
+.member .role{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.member .title{
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.member .description{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.member .headshot img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#team_description{
+        font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
