@@ -20,7 +20,7 @@ body{
     position: relative;
     min-height: 100vh;
     margin: 0;
-    padding-bottom: 66px;
+    padding-bottom: 88px;
 }
 
 /* Navigation Box */
@@ -105,6 +105,11 @@ footer .left{
     color: black;
     font-size: 16px;
     font-weight: 200;
+    line-height: 1.5;
+}
+
+footer .left span{
+    font-weight: 400;
 }
 
 #footer_email{
