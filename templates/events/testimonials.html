@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock header %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <h1 class="title">Student Testimonials</h1>
+        <p class="description">Hear what our participants have to say about their WAMO experience!</p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="testimonials-grid">
+        <div class="testimonial-card featured">
+            <div class="testimonial-header">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <p class="quote">WAMO 2's problems showcased what a team of dedicated and skilled mathematicians can create. I enjoyed and learned much more from this contest and its problems than any other, and it helped me develop a deeper appreciation for competition mathematics. I highly recommended taking WAMO 3 for anyone eager to challenge themselves and showcase their problem-solving ability.</p>
+            <div class="testimonial-footer">
+                <div class="name">William X</div>
+                <div class="contest">WAMO 2 Participant</div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <p class="quote">amazing contest you should make more of these</p>
+            <div class="testimonial-footer">
+                <div class="name">Jason L</div>
+                <div class="contest">WAMO 2 Participant</div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <p class="quote"> xoink xoink good contest. problem writers ADMIT XORZ xonk xonk </p>
+            <div class="testimonial-footer">
+                <div class="name">Eric</div>
+                <div class="contest">WAMC 10 Top Scorer</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

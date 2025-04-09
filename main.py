@@ -72,7 +72,7 @@ def not_found():
     return render_template('404.html')
 
 if __name__ == "__main__":
-    if "WAMODEV" in os.environ:
+    if True:
         app.run(port=80, host="0.0.0.0")
     else:
 
