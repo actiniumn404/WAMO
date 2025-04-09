@@ -236,8 +236,8 @@ section#hero{
 .achiev {
     background: linear-gradient(
       145deg,
-      #ecfccb,
-      #dcfce7
+      #f0fdf4,
+      #fff7ed
     );
     padding: 20px 30px;
     display: flex;
@@ -249,6 +249,12 @@ section#hero{
     margin-top: 28px;
     flex: 1;
 
+
+    /* Cool trick that Benny Wang (ihatemath123) taught me */
+    /* orz ihatemath123 css tricks */
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+
     border-width: 3px;
     border-style: solid;
     border-image-slice: 1;
@@ -257,6 +263,15 @@ section#hero{
       rgba(34,197,94,1),
       rgba(5,150,105,1)
     );
+    cursor: default;
+
+    transition: 0.5s background-position, 0.5s transform, 0.5s box-shadow;
+}
+
+.achiev:hover{
+    background-position: 100% 100%;
+    transform: translateY(-8px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .achiev .icon {
