@@ -31,3 +31,8 @@ python3 main.py
 ```
 
 The static website will then be generated in a file named `build`.
+
+## TODO
+[ ] Contact/Join us page
+[ ] Add instagram to page
+[ ] Add upcoming contests
