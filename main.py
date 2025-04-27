@@ -58,7 +58,7 @@ def page_whyus():
     return render_template("team.html")
 
 @app.route('/testimonials.html')
-def page_whyus():
+def page_testimonials():
     return render_template("testimonials.html")
 
 @app.route('/events/<event>.html')
