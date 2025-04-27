@@ -35,5 +35,5 @@ The static website will then be generated in a file named `build`.
 ## TODO
 - [ ] Contact/Join us page
 - [ ] Add instagram to page
-- [ ] Add upcoming contests
+- [x] Add upcoming contests
 - [ ] Change favicon to actually display by being 48n x 48n (n is an integer)
