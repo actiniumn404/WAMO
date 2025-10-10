@@ -54,17 +54,17 @@ def page_home():
     return render_template("index.html")
 
 @app.route('/team.html')
-@app.route('/team')
+@app.route('/team/')
 def page_whyus():
     return render_template("team.html")
 
 @app.route('/testimonials.html')
-@app.route('/testimonials')
+@app.route('/testimonials/')
 def page_testimonials():
     return render_template("testimonials.html")
 
 @app.route('/events/<event>.html')
-@app.route('/events/<event>')
+@app.route('/events/<event>/')
 def page_events(event):
     return render_template(f"events/{event}.html")
 
