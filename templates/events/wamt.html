@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-
 {% block header %}
 <link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
 {% endblock %}
@@ -9,7 +8,9 @@
 <section id="hero">
     <div class="left">
         <span class="title">WAMT</span>
-        <span class="description">This tournament is still in its development stage! More updates will be posted here in the future.</span>
+        <span class="description">
+            This tournament is still in its development stage! More updates will be posted here in the future.
+        </span>
     </div>
     <div class="right">
         <img src="{{url_for('static', filename='assets/logo.png')}}" />
@@ -17,26 +18,21 @@
 </section>
 
 <section id="content" class="info">
-  More information will be posted here in the future.
-    <!--<section id="problems">
-        <div class="left">
-            <span class="title">Problems</span>
-        </div>
+    More information will be posted here in the future.
+</section>
 
-        <a class="document" href="https://drive.google.com/file/d/1OYAybpVAAKs9NdRcFuDWkzv2yDR-E0AU/view?usp=sharing" target="_blank">
-            <div class="name">Problems Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-        </a>
-    </section>
+<section id="registration" class="info">
+    <span class="title">Interest / Registration Form</span>
 
-    <section id="solutions">
-        <div class="left">
-            <span class="title">Solutions</span>
-        </div>
-
-        <a class="document" href="https://drive.google.com/file/d/1aDeC2mulTw9YHGvinSqbl6QIzKXM-hKX/view?usp=sharing" target="_blank">
-            <div class="name">Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-        </a>
-    </section>-->
+    <iframe
+        src="https://docs.google.com/forms/d/e/xtNdxnQqEg8tBZ4XA/viewform?embedded=true"
+        width="100%"
+        height="900"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+    </iframe>
 </section>
 
 {% endblock content %}
