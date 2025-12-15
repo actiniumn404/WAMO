@@ -34,7 +34,7 @@ nav#navigation_box{
     justify-content: space-between;
 
     position: sticky;
-    top: 42px;
+    top: 44px;
     z-index: 1000;  /* Add high z-index to ensure it stays on top */
 }
 
@@ -48,13 +48,26 @@ nav#navigation_box{
 }
 /* Announcement / CTA bar */
 
-#announcement_bar{
+/* === Announcement / CTA Bar === */
+#announcement_bar {
     position: sticky;
     top: 0;
     z-index: 1100;
 
     width: 100%;
-    padding: 10px var(--padding);
+    background: linear-gradient(
+        90deg,
+        #14532d,
+        #166534,
+        #14532d
+    );
+}
+
+/* Centered content inside the bar */
+#announcement_bar .announcement_inner {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 10px 24px;
 
     display: flex;
     align-items: center;
@@ -62,23 +75,14 @@ nav#navigation_box{
     gap: 12px;
 
     font-size: 14px;
-    font-weight: 500;
-    color: #f8fafc;
-
-    background-color: #020617; /* add this */
-    background-image: linear-gradient(
-        90deg,
-        rgba(255,255,255,0.06),
-        rgba(255,255,255,0.12),
-        rgba(255,255,255,0.06)
-    );
-
-    backdrop-filter: blur(10px);
+    font-weight: 600;
+    color: #ecfdf5;
 }
 
+/* CTA link */
 #announcement_bar .announcement-cta {
-    color: #a5b4fc;          /* subtle accent */
-    font-weight: 700;
+    color: #bbf7d0;
+    font-weight: 800;
     text-decoration: none;
 }
 
