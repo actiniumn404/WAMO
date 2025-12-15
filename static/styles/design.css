@@ -23,6 +23,29 @@ body{
     padding-bottom: 88px;
 }
 
+#top_stack{
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+}
+
+#announcement_bar{
+  width: 100%;
+  background: #166534; /* pick your CTA color */
+}
+
+#announcement_bar .announcement_inner{
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #ecfdf5;
+  font-weight: 600;
+}
+
 /* Navigation Box */
 nav#navigation_box{
     width: 100%;
@@ -33,8 +56,8 @@ nav#navigation_box{
     align-items: center;
     justify-content: space-between;
 
-    position: sticky;
-    top: 44px;
+    position: relative;
+    top: auto;
     z-index: 1000;  /* Add high z-index to ensure it stays on top */
 }
 
@@ -46,51 +69,6 @@ nav#navigation_box{
     color: #F8F8F8;
     font-size: 24px;
 }
-/* Announcement / CTA bar */
-
-/* === Announcement / CTA Bar === */
-#announcement_bar {
-    position: sticky;
-    top: 0;
-    z-index: 1100;
-
-    width: 100%;
-    background: linear-gradient(
-        90deg,
-        #14532d,
-        #166534,
-        #14532d
-    );
-}
-
-/* Centered content inside the bar */
-#announcement_bar .announcement_inner {
-    max-width: var(--width);
-    margin: 0 auto;
-    padding: 10px 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    font-size: 14px;
-    font-weight: 600;
-    color: #ecfdf5;
-}
-
-/* CTA link */
-#announcement_bar .announcement-cta {
-    color: #bbf7d0;
-    font-weight: 800;
-    text-decoration: none;
-}
-
-#announcement_bar .announcement-cta:hover {
-    text-decoration: underline;
-}
-
-
 
 #logo{
     display: flex;
