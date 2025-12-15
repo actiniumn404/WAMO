@@ -47,6 +47,19 @@ nav#navigation_box{
     font-size: 24px;
 }
 
+#navigation_links .nav-cta {
+    margin-left: 12px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1.5px solid currentColor;
+}
+
+#navigation_links .nav-cta:hover {
+    transform: translateY(-1px);
+}
+
+
 #logo{
     display: flex;
     align-items: center;
