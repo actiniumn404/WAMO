@@ -25,6 +25,7 @@ body{
 
 /* Navigation Box */
 nav#navigation_box{
+    top: 42px;
     width: 100%;
     background: var(--nav-background);
     padding: 10px var(--padding);
@@ -47,43 +48,45 @@ nav#navigation_box{
     font-size: 24px;
 }
 /* Announcement / CTA bar */
+
 #announcement_bar {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+}
+
+#announcement_bar {
+    width: 100%;
+    padding: 10px var(--padding);
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
 
-    padding: 10px 14px;
     font-size: 14px;
     font-weight: 500;
 
+    color: #f8fafc;
+
     background: linear-gradient(
         90deg,
-        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.06),
         rgba(255,255,255,0.12),
-        rgba(255,255,255,0.08)
+        rgba(255,255,255,0.06)
     );
 
     backdrop-filter: blur(10px);
 }
 
-/* CTA button in bar */
 #announcement_bar .announcement-cta {
-    padding: 6px 12px;
-    border-radius: 999px;
+    color: #a5b4fc;          /* subtle accent */
     font-weight: 700;
     text-decoration: none;
-
-    background: #ffffff;
-    color: #0b1020;
-    border: 1px solid rgba(255,255,255,0.35);
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 #announcement_bar .announcement-cta:hover {
-    transform: translateY(-1px);
-    filter: brightness(0.98);
+    text-decoration: underline;
 }
 
 
