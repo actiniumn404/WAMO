@@ -22,28 +22,42 @@ body{
     margin: 0;
     padding-bottom: 88px;
 }
-
+/* One sticky stack: CTA + navbar */
 #top_stack{
   position: sticky;
   top: 0;
   z-index: 1100;
 }
 
+/* CTA bar (not sticky itself) */
 #announcement_bar{
   width: 100%;
-  background: #166534; /* pick your CTA color */
+  background: #166534; /* more obvious */
 }
 
 #announcement_bar .announcement_inner{
   max-width: var(--width);
   margin: 0 auto;
   padding: 10px 24px;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 12px;
+
   color: #ecfdf5;
+  font-size: 14px;
   font-weight: 600;
+}
+
+#announcement_bar .announcement-cta{
+  color: #bbf7d0;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#announcement_bar .announcement-cta:hover{
+  text-decoration: underline;
 }
 
 /* Navigation Box */
