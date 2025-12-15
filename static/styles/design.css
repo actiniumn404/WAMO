@@ -25,7 +25,6 @@ body{
 
 /* Navigation Box */
 nav#navigation_box{
-    top: 42px;
     width: 100%;
     background: var(--nav-background);
     padding: 10px var(--padding);
@@ -35,7 +34,7 @@ nav#navigation_box{
     justify-content: space-between;
 
     position: sticky;
-    top: 0;
+    top: 42px;
     z-index: 1000;  /* Add high z-index to ensure it stays on top */
 }
 
@@ -49,13 +48,11 @@ nav#navigation_box{
 }
 /* Announcement / CTA bar */
 
-#announcement_bar {
+#announcement_bar{
     position: sticky;
     top: 0;
     z-index: 1100;
-}
 
-#announcement_bar {
     width: 100%;
     padding: 10px var(--padding);
 
@@ -66,10 +63,10 @@ nav#navigation_box{
 
     font-size: 14px;
     font-weight: 500;
-
     color: #f8fafc;
 
-    background: linear-gradient(
+    background-color: #020617; /* add this */
+    background-image: linear-gradient(
         90deg,
         rgba(255,255,255,0.06),
         rgba(255,255,255,0.12),
