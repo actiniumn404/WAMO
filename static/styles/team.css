@@ -30,7 +30,7 @@
     left: -3px;
 }
 
-#members_wrapper{
+.members_wrapper{
     display: flex;
     row-gap: 50px;
     column-gap: 20px;
@@ -54,9 +54,37 @@
     transform: translateY(-8px);
 }
 
+.member .header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .member .role{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.member .role.president{
+    background: #ff8c87;
+}
+
+.member .role.vp{
+    background: #95c8f3;
+}
+
+.member .role.writer{
+    background: #b3e561;
+}
+
+.member .role.general{
+    background: #ffdc74;
 }
 
 .member .title{
@@ -66,7 +94,7 @@
 
 .member .description{
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.5;
 }
 

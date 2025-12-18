@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Patrick Sun",
+        "profile_pic": "pfps/patrick.png",
+        "title": "President",
+        "title_id": "president",
+        "description": "Patrick is a sophomore at Newport High School. Outside of writing problems for WAMO, Patrick loves feeding his video game addiction and playing plenty of tennis. His favorite math subject is number theory and he also enjoys learning more about history and preparing for physics olympiads."
+    },
+    {
+        "name": "Wesley Wu",
+        "profile_pic": "pfps/wesleypfp.png",
+        "title": "Vice President",
+        "title_id": "vp",
+        "description": "Wesley is a sophomore at Newport High School. Outside of mathematics, he enjoys playing tennis competitively and procrastinating. He enjoys most subjects, although he slightly dislikes combinatorics and number theory."
+    },
+    {
+        "name": "Ryan Tang",
+        "profile_pic": "pfps/ryantpfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Ryan is a junior at Newport High School. His favorite math subject is anything but geometry. Outside of math, Ryan also enjoys programming."
+    },
+    {
+        "name": "Kaiyuan Mao",
+        "profile_pic": "pfps/kaiyuanpfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Kaiyuan is a freshman at Interlake High School. Outside over participating and organizing math competitions, he likes to grind coding and play soccer and badminton. His favorite math subject is geometry."
+    },
+    {
+        "name": "James Yang",
+        "profile_pic": "pfps/jamespfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "James is a freshman at Lakeside School. In addition to participating in math competitions, he enjoys spending his free time at the zoo, watching movies with friends, and practicing soccer. His favorite area of mathematics is calculus, and he takes particular interest in problem writing, as it allows him to express his creativity."
+    },
+    {
+        "name": "Alex Yang",
+        "profile_pic": "pfps/alexpfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Alex is a freshman at Interlake High School. Outside of math, he enjoys playing chess, reading books, and coding. His favorite area of math is combinatorics, as he feels like it\"s one of his strongest areas."
+    },
+    {
+        "name": "Bruce Shu",
+        "profile_pic": "pfps/brucepfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Bruce is a freshman in Texas. Outside of math, he enjoys playing tennis. His favorite math subject is number theory."
+    },
+    {
+        "name": "Laura Wang",
+        "profile_pic": "pfps/laurapfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Laura is a sophomore at Lakeside School. Her favorite math subject is geometry, and she particularly enjoys writing combo problems. When she’s not doing math she likes to draw and ice skate."
+    },
+    {
+        "name": "Ryan Chen",
+        "profile_pic": "pfps/ryancpfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Ryan is a sophomore at Eastlake High School with a particular interest in combinatorics. Beyond his passion for mathematics, he enjoys playing Valorant."
+    }
+]

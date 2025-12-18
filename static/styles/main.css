@@ -20,37 +20,6 @@ section#hero{
 /* Meet the Team */
 
 
-.section_title{
-    font-size: 32px;
-    font-weight: 700;
-    position: relative;
-    transition: color 0.3s ease;
-    width: fit-content;
-    cursor: pointer;
-    margin: 5px auto 20px;
-}
-
-.section_subtitle{
-    text-align: center;
-}
-
-.section_title::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    width: 0;
-    height: 4px;
-    background: #16a34a;
-    transition: left 0.3s ease, width 0.3s ease;
-}
-
-.section_title:hover::after {
-    width: calc(100% + 6px);
-    left: -3px;
-}
-
-
 #events_description, #community_description{
     font-size: 18px;
     font-weight: 300;

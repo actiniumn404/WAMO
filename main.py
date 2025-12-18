@@ -3,6 +3,7 @@ from flask_frozen import Freezer
 
 import sys
 import os
+import json
 
 
 app = Flask(__name__)
@@ -17,7 +18,7 @@ def page_home():
 @app.route('/team.html')
 @app.route('/team/')
 def page_whyus():
-    return render_template("team.html")
+    return render_template("team.html", members=members, core_members=core_members)
 
 @app.route('/testimonials.html')
 @app.route('/testimonials/')
@@ -38,6 +39,13 @@ def page_events():
 @app.route('/404.html') # Hack for flask freeze
 def not_found():
     return render_template('404.html')
+
+# Load data
+with open("static/members.json", 'r') as file:
+    members = json.loads(file.read())
+
+with open("static/core_members.json", 'r') as file:
+    core_members = json.loads(file.read())
 
 if "WAMODEV" in os.environ:
     app.run(port=80, host="0.0.0.0")
