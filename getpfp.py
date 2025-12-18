@@ -39,6 +39,8 @@ def add_bg(image_path, output_path):
     output.save(output_path.split(".")[0] + ".png")
 
 
-for dirpath, dirnames, filenames in os.walk("static/pfps"):
-    for file in filenames:
-        add_bg(dirpath + "/" + file, dirpath + "/" + file)
+# for dirpath, dirnames, filenames in os.walk("static/pfps"):
+#     for file in filenames:
+#         add_bg(dirpath + "/" + file, dirpath + "/" + file)
+
+add_bg("static/pfps_raw/vivaanpfp.png", "static/pfps/vivaanpfp.png")
