@@ -312,3 +312,19 @@ footer svg {
     height: 30px;
 }
 
+#mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+iframe{
+    overflow: hidden;
+}
+
+@media (max-width: 1000px){
+    #mail{
+        flex-wrap: wrap;
+    }
+}
+
