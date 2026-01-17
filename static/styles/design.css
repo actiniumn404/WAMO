@@ -297,3 +297,18 @@ section#hero {
     left: -3px;
 }
 
+footer .right{
+    display: flex;
+    column-gap: 5px;
+}
+
+footer svg {
+    display: block;
+    background: rgb(34, 197, 94);
+    line-height: 1;
+    padding: 5px;
+    border-radius: 100%;
+    fill: white;
+    height: 30px;
+}
+

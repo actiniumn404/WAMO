@@ -365,17 +365,6 @@ section#hero{
     opacity: 0.7;
 }
 
-footer .right{
-    display: flex;
-    column-gap: 5px;
-}
-
-footer .right svg{
-    display: block;
-    width: 24px;
-    height: 24px;
-}
-
 @media (max-width: 900px){
     #sample_problem_wrapper{
         flex-wrap: wrap;
