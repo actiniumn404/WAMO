@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">2026 WAMC 8</span>
+        <span class="description">The WAMC 8 is a fun and challenging mock AMC 8 contest designed to sharpen your problem-solving skills and boost your confidence. With carefully crafted questions that closely mirror the real AMC 8, the WAMC 8 is the perfect way to practice, compete, and see how you stack up in a low-pressure, high-learning environment.</span>
+        <div id="buttons">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBAcstqit8PuE-35vpcuRuRrtmPJaFWZXdL-7Af35ZdGr5Rw/viewform" target="_blank"><button class="herobutton">Registration <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+            <a href="https://artofproblemsolving.com/community/c5h3744134" target="_blank"><button class="herobutton">AoPS Post <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+
+        </div>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Problems Document (Not Released Yet) <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Solutions Document (Not Released Yet) <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}
