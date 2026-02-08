@@ -53,10 +53,10 @@ with open("static/core_members.json", 'r') as file:
     core_members = json.loads(file.read())
 
 
-app.run(port=80, host="0.0.0.0")
+# app.run(port=80, host="0.0.0.0")
 
-# if "WAMODEV" in os.environ:
-#     app.run(port=80, host="0.0.0.0")
-# else:
-#     freezer.freeze()
+if "WAMODEV" in os.environ:
+    app.run(port=80, host="0.0.0.0")
+else:
+    freezer.freeze()
 
