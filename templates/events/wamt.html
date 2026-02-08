@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">WAMT</span>
+        <span class="description">
+            This tournament is still in its development stage! More updates will be posted here in the future.
+        </span>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    More information will be posted here in the future.
+</section>
+
+{% endblock content %}

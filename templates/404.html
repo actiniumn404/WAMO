@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/404.css')}}">
+{% endblock %}
+
+{% block content %}
+<div id="notfound">
+    <div class="left">
+        <h1>Error 404: This doesn't exist!</h1>
+        <span>Sorry about that. Please return to our homepage.</span>
+        <a href="/"><button><i class="fa-solid fa-arrow-left"></i> Return to Homepage</button></a>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/BadTriangle.svg')}}" />
+    </div>
+</div>
+{% endblock%}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">WAMO 3</span>
+        <span class="description">WAMO 3 delivered a fresh set of innovative problems and continued to grow our vibrant community of math enthusiasts across Washington.</span>
+        <a href="https://mathdash.com/contest/wamo-3/" target="_blank"><button class="herobutton">Open Mathdash Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1OYAybpVAAKs9NdRcFuDWkzv2yDR-E0AU/view?usp=sharing" target="_blank">
+            <div class="name">Problems Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1aDeC2mulTw9YHGvinSqbl6QIzKXM-hKX/view?usp=sharing" target="_blank">
+            <div class="name">Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+
+<section id="results" class="info">
+    <div class="left">
+        <span class="title">Contest Results</span>
+    </div>
+
+    <div class="results-grid">
+        <div class="result-card">
+            <div class="medal gold">
+                <i class="fa-solid fa-trophy"></i>
+                <span>First Place</span>
+            </div>
+            <div class="student-info">
+                <span class="name">Sami</span>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="medal silver">
+                <i class="fa-solid fa-medal"></i>
+                <span>Second Place</span>
+            </div>
+            <div class="student-info">
+                <span class="name">Tiger</span>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="medal bronze">
+                <i class="fa-solid fa-medal"></i>
+                <span>Third Place</span>
+            </div>
+            <div class="student-info">
+                <span class="name">Anthony</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock header %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <h1 class="title">Student Testimonials</h1>
+        <p class="description">Hear what our participants have to say about their WAMO experience!</p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="testimonials-grid">
+        <div class="testimonial-card featured">
+            <div class="testimonial-header">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <p class="quote">WAMO 2's problems showcased what a team of dedicated and skilled mathematicians can create. I enjoyed and learned much more from this contest and its problems than any other, and it helped me develop a deeper appreciation for competition mathematics. I highly recommended taking WAMO 3 for anyone eager to challenge themselves and showcase their problem-solving ability.</p>
+            <div class="testimonial-footer">
+                <div class="name">William X</div>
+                <div class="contest">WAMO 2 Participant</div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <p class="quote">amazing contest you should make more of these</p>
+            <div class="testimonial-footer">
+                <div class="name">Jason L</div>
+                <div class="contest">WAMO 2 Participant</div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <p class="quote"> WAMO is an amazing orgnization dedicated to creating challenging and unique math contests. The problems are dynamic and open to everyone, and it is truly an experience. Thank you to WAMO for their thought-provoking and great competitions! </p>
+            <div class="testimonial-footer">
+                <div class="name">Max Z</div>
+                <div class="contest">WAMO 2 Participant</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

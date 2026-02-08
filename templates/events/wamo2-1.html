@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">WAMO 2.1</span>
+        <span class="description">WAMO 2.1 was a special mid-season contest offering fresh problems and a fun challenge to keep the momentum going between WAMO 2 and 3.</span>
+        <a href="https://mathdash.com/contest/wamo-2-1" target="_blank"><button class="herobutton">Open Mathdash Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Short Answers Document (PDF Version Unreleased) <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Short Answers Document (PDF Version Unreleased) <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}

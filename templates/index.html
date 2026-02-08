@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<section id="hero">
+    <span class="title">Math for the <span class="highlight">Evergreen&nbsp;State</span></span>
+    <span class="description">WAMO: Uniting Washington’s math minds through challenge, community, and creativity.
+    </span>
+</section>
+
+<section id="events">
+    <h1 id="events_title" class="section_title">Projects</h1>
+    <span id="events_description">WAMO contests are designed to challenge and inspire math students. From creative problem-solving to rigorous proofs, each competition offers a unique opportunity for students to test their skills and deepen their love for mathematics. Whether you're new to contests or a seasoned competitor, WAMO events foster a supportive community and a spirit of curiosity.</span>
+
+    <div id="events_wrapper">
+        <a class="event" style="--bg: url(/static/assets/interstate90bridge.png)" href="events/wamt">
+            <span class="upcoming">New</span>
+            <div>
+                <span class="title">WAMT</span>
+                <span class="description">March 2026</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/bellevue.png)" href="events/waime">
+            <span class="upcoming">New</span>
+            <div>
+                <span class="title">WAIME</span>
+                <span class="description">January 27th, 2026</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/snoqualmie.png)" href="events/wamc8">
+            <span class="badge"></span>
+            <div>
+                <span class="title">WAMC 8</span>
+                <span class="description">January 17th, 2026</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/wsdot_ferry.png)" href="events/wamc2025">
+            <span class="badge"></span>
+            <div>
+                <span class="title">2025 WAMC 10/12</span>
+                <span class="description">October 30th, 2025 to November 13th, 2025</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/uw.png)" href="events/wamo3">
+            <span class="badge"></span>
+            <div>
+                <span class="title">WAMO 3</span>
+                <span class="description">April 12th, 2025 to April 26th, 2025</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/rainier.png)" href="events/wamo2-1">
+            <span class="badge"></span>
+            <div>
+                <span class="title">WAMO 2.1</span>
+                <span class="description">January 17th, 2025</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/spaceneedle.png)" href="events/wamc">
+            <span class="badge"></span>
+            <div>
+                <span class="title">2024 WAMC 10/12</span>
+                <span class="description">October 21st, 2024 to November 3rd, 2024</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/orca.png)" href="events/wamo2">
+            <span class="badge"></span>
+            <div>
+                <span class="title">WAMO 2</span>
+                <span class="description">August 5th, 2024 to August 12th, 2024</span>
+            </div>
+        </a>
+        <a class="event" style="--bg: url(/static/assets/goldfinch.png)" href="events/wamo1">
+            <span class="badge"></span>
+            <div>
+                <span class="title">WAMO 1</span>
+                <span class="description">May 30th, 2024 to June 12th, 2024</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="sample">
+    <h1 id="sample_title" class="section_title">High Quality Problems</h1>
+    <div id="sample_problem_wrapper">
+        <div class="paragraph">
+            Every WAMO problem is written by experienced competitors who have solved thousands of contest problems. Before publication, each problem is test-solved by at least 3 independent solvers, revised for clarity, and checked to ensure its difficulty is appropriate. For our mocks, we aim to perfectly replicate the style and difficulty of the official contests, providing an authentic experience for our participants.
+            <!--<a href="https://mathdash.com/contest/2024-WAMO-1" target="_blank"><button id="samplebutton">Vi <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>-->
+
+        </div>
+        <div id="sample_problem">
+            A rectangle of dimensions $4\sqrt{3}$ by $4$ has a point $P$ chosen uniformly at random inside it. James folds each vertex onto $P$, forming four crease lines that partition the rectangle. The expected number of regions formed by those lines is $a-\frac{b\pi}{c\sqrt{d}}$ where $a,b,c,d$ are positive integers, $\gcd(b,c)=1$, and $d$ is squarefree. Find $a+b+c+d$.
+            <br><br>
+            <span class="source">Source: <a href="/events/waime">WAIME</a> Problem 15</span>
+        </div>
+    </div>
+</section>
+
+<section id="whyus">
+    <h1 id="whyus_title" class="section_title">Why WAMO?</h1>
+    <!-- <blockquote>
+        <div class="quote">
+            "Without mathematics there is no art."
+        </div>
+        <div class="bottom">
+            - Luca Pacioli
+        </div>
+    </blockquote> -->
+    
+    <div class="why-points">
+        <div class="point">
+            <h3>Our Vision</h3>
+            <p>We want to create an exquisite contest experience for young middle school students in Washington, something that stands out from every other competition they'll encounter. Our contests should be challenging, inspiring, and genuinely fun to solve. When a student finishes a WAMO contest, we want them to leave excited about math instead of being exhausted or discouraged.</p>
+        </div>
+        
+        <div class="point">
+            <h3>What Sets Us Apart</h3>
+            <ul>
+                <li>We run contests for all levels, from AMC 8 to AIME, so people of all skill levels can enjoy solving our problems.</li>
+                <li>As <a href="https://artofproblemsolving.com/blog/articles/pros-cons-math-competitions" target="_blank">AoPS notes</a>, math contests' greatest asset is community. We aim to foster a community where every participant feels recognized, through thoughtful communication, transparency, and a motivating competitive environment.</li>
+            </ul>
+        </div>
+        
+        <div class="point">
+            <h3>Our Expertise</h3>
+            <ul>
+                <li>We are a team of successful competitors who truly understand the structure and style of math competitions</li>
+                <li>We also have experience writing problems for many different competitions (JMPSC, MM, and more)</li>
+                <li>We have experienced mentors providing high-quality problems and guidance</li>
+            </ul>
+        </div>
+    </div>
+    <h2 class="section_subtitle">What we've accomplished</h2>
+    <div id="achiev_wrapper">
+        <div class="achiev">
+            <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="number">12+</div>
+            <div class="desc">USA(J)MO Qualifications</div>
+        </div>
+        <div class="achiev">
+            <div class="icon"><i class="fa-solid fa-medal"></i></div>
+            <div class="number">28+</div>
+            <div class="desc">AMC 10 DHRs</div>
+        </div>
+        <div class="achiev">
+            <div class="icon"><i class="fa-solid fa-award"></i></div>
+            <div class="number">50+</div>
+            <div class="desc">AIME Qualifications</div>
+        </div>
+        <div class="achiev">
+            <div class="icon"><i class="fa-solid fa-users"></i></div>
+            <div class="number">1000+</div>
+            <div class="desc">Past Participants</div>
+        </div>
+    </div>
+</section>
+
+<section id="community">
+    <div class="left">
+        <iframe src="https://discord.com/widget?id=1241441170769576017&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    <div class="right">
+        <h1 id="community_title" class="section_title">Join the WAMO Community</h1>
+        <span id="community_description">Join the WAMO Discord server to connect with a vibrant community of like-minded individuals, engage in lively discussions, and stay up-to-date on all things WAMO. It's the perfect place to share your thoughts, make new friends, and be part of the WAMO experience!</span>
+    </div>
+
+</section>
+
+<section id="mail">
+    <div class="left">
+        <h1 class="section_title">Sign up for our newsletter!</h1>
+        <p>Get announcements for future contests, new initiatives, and more!</p>
+    </div>
+    <div class="right">
+        <iframe id="newsletter" src="https://docs.google.com/forms/d/e/1FAIpQLSdJsMApFVpQVbEgKJOJI_r1aE2ol1Wn_rSXAyf_0vAeOM6k0A/viewform?embedded=true" width="640" height="451" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</section>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+{% endblock %}

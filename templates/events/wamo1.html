@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">WAMO 1</span>
+        <span class="description">WAMO 1 was our inaugural contest, kicking off a tradition of creative, challenging math problems designed to engage and excite students across Washington.</span>
+        <a href="https://mathdash.com/contest/2024-WAMO-1" target="_blank"><button class="herobutton">Open Mathdash Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/17uJPJ7qwnhWyQkW52jkCaGI0jjIII1OQ/view?usp=sharing" target="_blank">
+            <div class="name">Short Answers Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="https://drive.google.com/file/d/1nGCbhE16gqK-Eo4vQihQj4O2_4hXQ8on/view?usp=sharing"  target="_blank">
+            <div class="name">Proof Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1IO1MQNlQJsHToHRaQpBN4dmsYaH612mC/view?usp=sharing" target="_blank">
+            <div class="name">Short Answers Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="https://drive.google.com/file/d/1Lp3RWJUv-WU9FyP7GFRQ5A7eVNn2XC7L/view?usp=sharing"  target="_blank">
+            <div class="name">Proof Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+<section id="results" class="info">
+    <div class="left">
+        <span class="title">Contest Results</span>
+    </div>
+    
+    <div class="results-grid">
+        <div class="result-card">
+            <div class="medal gold">
+                <i class="fa-solid fa-trophy"></i>
+                <span>First Place</span>
+            </div>
+            <div class="student-info">
+                <span class="name">Selena Ge</span>
+                <span class="school">Massachussetts</span>
+                <span class="score">Score: 54/70</span>
+            </div>
+        </div>
+        
+        <div class="result-card">
+            <div class="medal silver">
+                <i class="fa-solid fa-medal"></i>
+                <span>Second Place</span>
+            </div>
+            <div class="student-info">
+                <span class="name">Wesley Wu</span>
+                <span class="school">Washington</span>
+                <span class="score">Score: 42/70</span>
+            </div>
+        </div>
+        
+        <div class="result-card">
+            <div class="medal bronze">
+                <i class="fa-solid fa-medal"></i>
+                <span>Third Place</span>
+            </div>
+            <div class="student-info">
+                <span class="name">Blueberryfaygo_55</span>
+                <span class="school">Washington</span>
+                <span class="score">Score: 35/70</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}

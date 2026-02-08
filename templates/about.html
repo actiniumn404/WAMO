@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='styles/about.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<section id="hero">
+    <div class="left">
+        <span class="title">Our Story</span>
+        <span class="description">From a Discord chat to a statewide organization—how WAMO came to be.</span>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info about-section">
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>The Beginning</h3>
+                <p>The Washington Math Organization (WAMO) began as a small, student-run community united by a shared passion for competitive mathematics. In late 2023, Wesley Wu created a Discord group chat for students who regularly played Art of Problem Solving For the Win (AoPS FTW). Initially, the group served as a casual space for competition and discussion. Over time, it evolved into a collaborative environment where students challenged one another not only to solve problems, but to understand why solutions worked and how problems were constructed.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>The Turning Point</h3>
+                <p>A major turning point came in mid-2024, when Alexander Yang invited Jason Lee into the group. As members began experiencing burnout from repeatedly solving existing contests, Jason proposed a shift in focus: instead of only preparing for AMC-style competitions, the group could begin writing its own problems. To support this idea, he created a shared Overleaf document, where members started contributing original problems, refining wording, and debating difficulty. This document became the foundation of WAMO.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>From Collaboration to Organization</h3>
+                <p>As problem writing intensified, WAMO transitioned from an informal collaboration into a structured organization. Members collectively developed internal standards for problem quality, editorial review, and contest design. Recognizing the need for stability and accountability, the group drafted a formal constitution, outlining leadership roles, responsibilities, and decision-making processes. This step marked WAMO's transformation into a serious, self-governing student organization.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>The Leadership Election</h3>
+                <p>In December, WAMO held its first leadership election, a defining moment in its history. Two candidates—Patrick and Wesley—ran in a closely contested race that featured extensive discussion, shifting alliances, and careful deliberation. The intensity of the process mirrored that of a real political election, underscoring how seriously members took the future of the organization. Wesley distinguished himself as a foundational contributor and relentless worker, while Patrick emerged as a strategic visionary leader with a clear growth plan. After multiple shifts in support, Patrick ultimately prevailed by a narrow 5–4 margin.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>The Patrick Era</h3>
+                <p>Patrick's election marked the beginning of what members now refer to as the Patrick Era, a period of rapid expansion and transformation that continues today. Much like an organizational "industrial revolution," this era was defined by a dramatic increase in productivity and efficiency. Patrick recruited a team of highly skilled members, implemented structural reforms, and introduced operational changes that streamlined problem writing, editing, and contest administration. Under his leadership, WAMO's output, consistency, and ambition grew at an unprecedented rate.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Today</h3>
+                <p>Today, WAMO stands as a disciplined, student-led organization built on collaboration, accountability, and continuous improvement. We continue expanding our mission with new initiatives like WAMT—a creative, computation-focused tournament designed specifically for middle schoolers across Washington. Guided by our constitution and strengthened by committed leadership, WAMO remains grounded in our <strong>core mission: to ensure the best possible experience for competitors through fair, high-quality problems, thoughtful contest design, and a community that values both challenge and learning.</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

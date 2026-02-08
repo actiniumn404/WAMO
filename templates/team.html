@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/team.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">The WAMO Team</span>
+        <span class="description">We are experienced competitive math enthusiasts who have scored well in contests ranging from MATHCOUNTS to the USAMO. Our team is comprised of multiple MATHCOUNTS National qualifiers, AMC 8 and AMC 10 perfect scorers, AIME top scorers, and USA(J)MO participants.</span>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="team">
+
+    <h1 class="section_title">Core Members</h1>
+    <div class="members_wrapper">
+        {% for member in core_members  %}
+
+        <div class="member">
+            <div class="headshot">
+                <img src="{{ url_for('static', filename=member.profile_pic) }}" />
+            </div>
+            <div class="header">
+                <div class="title">{{ member.name }}</div>
+                <div class="role {{ member.title_id }}">{{ member.title }}</div>
+            </div>
+            <div class="description">
+                {{ member.description }}
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+    <h1 class="section_title">Other Members</h1>
+
+    <div class="members_wrapper">
+        {% for member in members  %}
+        <div class="member">
+            <div class="headshot">
+                <img src="{{ url_for('static', filename=member.profile_pic) }}" />
+            </div>
+            <div class="header">
+                <div class="title">{{ member.name }}</div>
+                <div class="role {{ member.title_id }}">{{ member.title }}</div>
+            </div>
+            <div class="description">
+                {{ member.description }}
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</section>
+{% endblock content %}

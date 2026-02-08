@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">2025 WAMC 10/12</span>
+        <span class="description">WAMC 10/12 is a mock AMC contest that gives students a chance to sharpen their skills and simulate the real AMC10/12 experience in a low-stress setting.</span>
+        <div id="buttons">
+            <a href="https://tinyurl.com/2025WAMC" target="_blank"><button class="herobutton">Submission Form <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+            <a href="https://artofproblemsolving.com/community/c5h3706424_released_2025_wamc_1012" target="_blank"><button class="herobutton">AoPS Post <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+
+        </div>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1Mz3UimFIXPrvRlIdx47Ac1MgGx9P3Kab/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 10 Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="https://drive.google.com/file/d/1s5jyPeeicClRHS7nzhAYktaP_pgm_LQ0/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 12 Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1uXWKlWjBNUcPHdIFPVCA9JL4E2dw6m3P/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 10 Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="https://drive.google.com/file/d/1Pjr7h6ombWQJkOUkB6eMOeRjofcGWKfH/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 12 Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}

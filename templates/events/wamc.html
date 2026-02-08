@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">2024 WAMC 10/12</span>
+        <span class="description">WAMC 10/12 is a mock AMC contest that gives students a chance to sharpen their skills and simulate the real AMC10/12 experience in a low-stress setting.</span>
+        <div id="buttons">
+            <a href="https://mathdash.com/contest/2024-wamc-10/" target="_blank"><button class="herobutton">WAMC 10 Mathdash <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+            <a href="https://mathdash.com/contest/2024-wamc-12/" target="_blank"><button class="herobutton">WAMC 12 Mathdash <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/1GNB1WFqpbkK4Jd4xhFQsyXRBP6IChm5Y/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 10 Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+
+        <a class="document" href="https://drive.google.com/file/d/12ROPrN-Yb8fkc7-qkq8UQot21R7rYY1P/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 12 Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document" href="https://drive.google.com/file/d/12C6zpaJblw5TVqltrJRSoYO_oi7UiPFw/view?usp=sharing" target="_blank">
+            <div class="name">WAMC 10/12 Solutions Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}

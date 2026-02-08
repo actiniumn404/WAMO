@@ -1,0 +1,382 @@
+/* Hero Banner */
+section#hero{
+     height: 400px;
+     width: 100%;
+
+     background-image: url("../assets/trees-faded.png"), linear-gradient(180deg, #020617 0%, #022c22 100%);
+     background-size: auto 100%;
+     background-repeat: no-repeat;
+     background-position: bottom right;
+
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+
+     padding: 0 var(--padding);
+     justify-content: center;
+     animation: fadeIn 0.8s ease-out forwards;
+ }
+
+/* Meet the Team */
+
+
+#events_description, #community_description{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+
+#events{
+    padding: 60px var(--padding);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+#events_wrapper{
+    margin: 20px 0;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.event{
+    width: 400px;
+    flex: 1;
+    min-width: 375px;
+    height: 220px;
+    background: var(--bg);
+    background-size: 100%;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    background-position: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 400px){
+    .event{
+        min-width: 300px;
+        background-size: 100% 100%;
+    }
+}
+
+.event:hover{
+    background-size: 110%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+    transform: translateY(-4px);
+}
+
+.event > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.event .title{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.event .description{
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+}
+
+.upcoming{
+    background: #ef4444;
+    font-weight: 600;
+    color: white;
+    padding: 5px 15px;
+    width: fit-content;
+    border-radius: 20px;
+    animation: softPulse 2s ease-in-out infinite;
+}
+
+#community{
+    padding: 60px var(--padding);
+    display: flex;
+    column-gap: 40px;
+    row-gap: 20px;
+    flex-wrap:wrap;
+    background: #f3f4f6;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+#community iframe{
+    width: 100%;
+}
+
+
+#community .left{
+    min-width: 400px;
+    flex: 1;
+}
+
+@media (max-width: 500px){
+    #community .left{
+        min-width: 200px;
+    }
+}
+
+#community .right{
+    flex: 1;
+}
+
+
+
+/*.member:hover .headshot img {
+    transform: scale(1.02);
+}*/
+/* Subtle pulse animation for upcoming badge */
+@keyframes softPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#whyus {
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 100px var(--padding);
+    animation: fadeIn 0.8s ease-out forwards;
+    background: white;
+}
+
+#achiev_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.achiev {
+    background: white;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.achiev:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px -4px rgba(34, 197, 94, 0.15);
+    border-color: #22c55e;
+}
+
+.achiev .icon {
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    width: 56px;
+    background: linear-gradient(145deg, rgba(34,197,94,1) 0%, rgba(5,150,105,1) 100%);
+    color: white;
+    border-radius: 10px;
+    margin-top: -48px;
+}
+
+.achiev .number {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(5,150,105,1);
+}
+
+.achiev .desc {
+    color: gray;
+    text-transform: uppercase;
+}
+
+/* Add after the existing #whyus styles */
+
+.why-points {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.why-points .point {
+    padding: 0;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.why-points h3 {
+    color: black;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.why-points p {
+    line-height: 1.6;
+    color: #27272a;
+    margin: 0;
+}
+
+.why-points ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-points ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #334155;
+}
+
+.why-points ul li::before {
+    content: "•";
+    color: #22c55e;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+#whyus blockquote {
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: white;
+    border-radius: 12px;
+    border-left: 5px solid #22c55e;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: fit-content;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#whyus blockquote:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.12);
+}
+
+#whyus blockquote .quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #1e293b;
+    line-height: 1.8;
+    margin: 0;
+}
+
+#whyus blockquote .bottom {
+    margin-top: 16px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#sample{
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 60px var(--padding);
+    font-weight: 300;
+    background: #f3f4f6;
+}
+
+#sample .paragraph{
+    line-height: 1.5;
+    margin: 0;
+}
+
+#sample_problem{
+    font-family: 'Katex_Main', serif;
+    font-size: 21px;
+    background: white;
+    padding: 20px;
+    border: 2px solid #52525b;
+    border-radius: 5px;
+}
+
+#sample_problem_wrapper{
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+#sample_problem img{
+    width: 100%;
+}
+
+#sample_problem .source{
+    font-size: 18px;
+}
+
+#sample_problem a{
+    color: #0e7490;
+    text-decoration: none;
+}
+
+#sample_problem a:hover{
+    text-decoration: underline;
+}
+
+#samplebutton{
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    background: #374151;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.2s ease-in;
+    margin-right: 10px;
+}
+
+#samplebutton:hover{
+    opacity: 0.7;
+}
+
+#mail{
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 60px var(--padding);
+    background: rgb(31, 41, 55);
+    color: white;
+}
+
+#mail .left{
+    text-align: left;
+}
+
+#mail .section_title{
+    margin-left: 0;
+    text-align: left;
+    font-weight: 800;
+}
+
+@media (max-width: 900px){
+    #sample_problem_wrapper{
+        flex-wrap: wrap;
+    }
+}
