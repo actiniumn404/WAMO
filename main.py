@@ -30,6 +30,11 @@ def page_about():
 def page_testimonials():
     return render_template("testimonials.html")
 
+@app.route('/about.html')
+@app.route('/about/')
+def page_about():
+    return render_template("about.html")
+
 @app.route('/events/<event>.html')
 @app.route('/events/<event>/')
 def page_events(event):
@@ -51,6 +56,9 @@ with open("static/members.json", 'r') as file:
 
 with open("static/core_members.json", 'r') as file:
     core_members = json.loads(file.read())
+
+
+# app.run(port=80, host="0.0.0.0")
 
 if "WAMODEV" in os.environ:
     app.run(port=80, host="0.0.0.0")
