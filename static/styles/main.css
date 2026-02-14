@@ -322,6 +322,10 @@ section#hero{
     border-radius: 5px;
 }
 
+#sample_problem span{
+    font-size: 20px;
+}
+
 #sample_problem_wrapper{
     display: flex;
     column-gap: 30px;

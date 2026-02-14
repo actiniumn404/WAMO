@@ -20,6 +20,11 @@ def page_home():
 def page_whyus():
     return render_template("team.html", members=members, core_members=core_members)
 
+@app.route('/about.html')
+@app.route('/about/')
+def page_about():
+    return render_template("about.html")
+
 @app.route('/testimonials.html')
 @app.route('/testimonials/')
 def page_testimonials():
