@@ -30,11 +30,6 @@ def page_about():
 def page_testimonials():
     return render_template("testimonials.html")
 
-@app.route('/about.html')
-@app.route('/about/')
-def page_about():
-    return render_template("about.html")
-
 @app.route('/events/<event>.html')
 @app.route('/events/<event>/')
 def page_events(event):
