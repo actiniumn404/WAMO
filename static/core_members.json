@@ -14,6 +14,13 @@
         "description": "Kaiyuan is a freshman at Interlake High School. Outside of participating and organizing math competitions, he likes to practice competitive programming and play soccer and badminton. His favorite math subject is geometry."
     },
     {
+        "name": "Vivaan Mukherjee",
+        "profile_pic": "pfps/vivaanpfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Vivaan is a freshman at Interlake High School. Outside of writing problems for WAMO, he enjoys exploring nature and going on hikes. His favorite math subject is combinatorics and he loves cultivating his interest in chemistry."
+    },
+    {
         "name": "Ryan Tang",
         "profile_pic": "pfps/ryantpfp.png",
         "title": "Problem Writer",
