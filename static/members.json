@@ -1,12 +1,5 @@
 [
     {
-        "name": "Vivaan Mukherjee",
-        "profile_pic": "pfps/vivaanpfp.png",
-        "title": "Member",
-        "title_id": "general",
-        "description": "Vivaan is a freshman at Interlake High School. Outside of writing problems for WAMO, he enjoys exploring nature and going on hikes. His favorite math subject is combinatorics and he loves cultivating his interest in chemistry."
-    },
-    {
         "name": "Andrew Chen",
         "profile_pic": "assets/default.png",
         "title": "Developer",
