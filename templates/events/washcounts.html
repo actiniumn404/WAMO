@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/events.css')}}">
+{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <div class="left">
+        <span class="title">2026 WASHCOUNTS</span>
+        <span class="description">
+            Experience the excitement of a real MATHCOUNTS State Competition with practice sessions that follow official timing and rules. Build confidence, compete with integrity, and sharpen your skills as you learn, grow, and improve with every round.
+        </span>
+        <div id="buttons">
+            <a href="https://countdown.wamomath.org" target="_blank"><button class="herobutton">Countdown Round Platform <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="{{url_for('static', filename='assets/logo.png')}}" />
+    </div>
+</section>
+
+<section id="content" class="info">
+    <section id="problems">
+        <div class="left">
+            <span class="title">Problems</span>
+        </div>
+
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Sprint & Target Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Countdown Round Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+
+    <section id="solutions">
+        <div class="left">
+            <span class="title">Solutions</span>
+        </div>
+
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Sprint & Target Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+        <a class="document disabled" href="" target="_blank">
+            <div class="name">Countdown Round Document <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </a>
+    </section>
+</section>
+
+{% endblock content %}
