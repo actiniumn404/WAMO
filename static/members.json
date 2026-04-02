@@ -5,5 +5,12 @@
         "title": "Developer",
         "title_id": "general",
         "description": "Andrew is a sophomore at Interlake High School and manages software-related work for WAMO. In his free time, he enjoys reading, practicing competitive programming, and participating in robotics."
+    },
+    {
+        "name": "Hanbin Wang",
+        "profile_pic": "assets/default.png",
+        "title": "Problem Writer",
+        "title_id": "general",
+        "description": "Hanbin is a freshman at Interlake High School. Besides competing in and writing problems for math competitions, Hanbin likes running, swimming, and playing video games. His favorite math subject is algebra."
     }
 ]
