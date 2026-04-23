@@ -37,13 +37,8 @@
     {
         "name": "Alex Yang",
         "profile_pic": "pfps/alexpfp.png",
-<<<<<<< HEAD
-        "title": "Problem Writer",
-        "title_id": "writer",
-=======
         "title": "Outreach Director",
         "title_id": "outreach",
->>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
         "description": "Alex is a freshman at Interlake High School. Outside of math, he enjoys playing chess, reading books, and coding. His favorite area of math is combinatorics, as he feels like it's one of his strongest areas."
     },
     {
