@@ -32,10 +32,11 @@
 
 .members_wrapper{
     display: flex;
+    flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 20px;
-    flex-wrap: wrap;
-    margin: 50px 0;
+    width: min(100%, 1180px);
+    margin: 50px auto;
     justify-content: center;
     align-items: baseline;
 }
