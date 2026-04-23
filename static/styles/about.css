@@ -1,6 +1,7 @@
 
 .timeline {
     position: relative;
+<<<<<<< HEAD
     padding: 40px 0;
     max-width: 800px;
     margin: 0 auto;
@@ -14,10 +15,21 @@
     bottom: 0;
     width: 3px;
     background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+=======
+    padding: 28px 0 12px;
+    width: calc(100% + (var(--padding) * 2));
+    max-width: none;
+    margin: 0 calc(var(--padding) * -1);
+}
+
+.timeline::before {
+    content: none;
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
 }
 
 .timeline-item {
     position: relative;
+<<<<<<< HEAD
     margin-bottom: 50px;
     padding-left: 120px;
 }
@@ -59,17 +71,63 @@
     font-size: 22px;
     font-weight: 700;
     color: #0f172a;
+=======
+    margin: 0;
+    padding: 32px var(--padding);
+}
+
+.timeline-dot {
+    display: none;
+}
+
+.timeline-item:nth-child(odd) {
+    background: #ffffff;
+}
+
+.timeline-item:nth-child(even) {
+    background: #f8fafc;
+}
+
+.timeline-content {
+    border: 1px solid #d1d5db;
+    border-radius: 0;
+    padding: 30px 34px;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.timeline-item:hover .timeline-content {
+    border-color: #166534;
+    box-shadow: none;
+    transform: none;
+}
+
+.timeline-content h3 {
+    margin: 0 0 14px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
 }
 
 .timeline-content p {
     margin: 0;
+<<<<<<< HEAD
     font-size: 15px;
     line-height: 1.7;
+=======
+    font-size: 16px;
+    line-height: 1.75;
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
     color: #475569;
 }
 
 @media (max-width: 768px) {
     .timeline {
+<<<<<<< HEAD
         padding: 20px 0;
     }
 
@@ -92,6 +150,25 @@
 
     .timeline-content {
         padding: 20px 20px;
+=======
+        padding: 20px 0 8px;
+    }
+
+    .timeline::before {
+        content: none;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-item {
+        padding: 24px var(--padding);
+    }
+
+    .timeline-content {
+        padding: 24px 22px;
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
     }
 
     .timeline-content h3 {
@@ -99,12 +176,17 @@
     }
 
     .timeline-content p {
+<<<<<<< HEAD
         font-size: 14px;
+=======
+        font-size: 15px;
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
     }
 }
 
 @media (max-width: 480px) {
     .timeline::before {
+<<<<<<< HEAD
         left: 15px;
     }
 
@@ -123,6 +205,21 @@
 
     .timeline-content {
         padding: 16px 16px;
+=======
+        content: none;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-item {
+        padding: 20px var(--padding);
+    }
+
+    .timeline-content {
+        padding: 18px 16px;
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
     }
 
     .timeline-content h3 {
@@ -134,4 +231,8 @@
         font-size: 13px;
         line-height: 1.6;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)

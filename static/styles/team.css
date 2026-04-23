@@ -36,7 +36,7 @@
     column-gap: 20px;
     flex-wrap: wrap;
     margin: 50px 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
 }
 
@@ -46,7 +46,7 @@
     row-gap: 10px;
     border-radius: 5px;
     width: 380px;
-    margin: 0 auto;
+    margin: 0;
     transition: transform 0.3s ease-out;
 }
 
@@ -81,6 +81,10 @@
 
 .member .role.writer{
     background: #c2410c1f;
+}
+
+.member .role.outreach{
+    background: #dc26261f;
 }
 
 .member .role.general{

@@ -1,7 +1,11 @@
 [
     {
         "name": "Andrew Chen",
+<<<<<<< HEAD
         "profile_pic": "assets/default.png",
+=======
+        "profile_pic": "pfps/andrewpfp.png",
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
         "title": "Developer",
         "title_id": "general",
         "description": "Andrew is a sophomore at Interlake High School and manages software-related work for WAMO. In his free time, he enjoys reading, practicing competitive programming, and participating in robotics."
@@ -15,9 +19,30 @@
     },
     {
         "name": "William Xin",
+<<<<<<< HEAD
         "profile_pic": "assets/default.png",
         "title": "Problem Writer",
         "title_id": "writer",
         "description": "William is a freshman at Interlake High School. Outside of math competitions, he likes to participate in tennis and track. In his spare time, he grinds physics and video games. His favorite math subject is geometry."
+=======
+        "profile_pic": "pfps/williampfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "William is a freshman at Interlake High School. Outside of math competitions, he likes to participate in tennis and track. In his spare time, he grinds physics and video games. His favorite math subject is geometry."
+    },
+    {
+        "name": "Jaelyn Park",
+        "profile_pic": "pfps/jaelynpfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Jaelyn is a freshman at Interlake High School who likes to play the guitar and solve Yajilin puzzles in her free time. She particularly enjoys combinatorics."
+    },
+    {
+        "name": "Elynna Wu",
+        "profile_pic": "pfps/elynnapfp.png",
+        "title": "Problem Writer",
+        "title_id": "writer",
+        "description": "Elynna is a freshman at Newport High School. Outside of mathematics, she also enjoys fencing competitively and playing the violin. Her favorite math subjects are geometry and combinatorics."
+>>>>>>> 9a4b430 (added members + profiles, changed some css, added outreach role for alex)
     }
 ]
